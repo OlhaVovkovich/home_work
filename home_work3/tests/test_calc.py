@@ -1,28 +1,6 @@
 import unittest
-
+from ..funcs.simple_calc import *
 from parameterized import parameterized_class
-
-
-def add(x, y):
-    """Add Function"""
-    return x + y
-
-
-def subtract(x, y):
-    """Subtract Function"""
-    return x - y
-
-
-def multiply(x, y):
-    """Multiply Function"""
-    return x * y
-
-
-def divide(x, y):
-    """Divide Function"""
-    if y == 0:
-        raise ValueError('Can not divide by zero!')
-    return x / y
 
 
 @parameterized_class(('x', 'y', 'sum', 'sub', 'mul', 'div'), [
